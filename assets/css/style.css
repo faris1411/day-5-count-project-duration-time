@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input, textarea {
+  border-style: none;
+}
+
+/* Awal Navbar */
+nav {
+  display: flex;
+  height: 7vh;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  flex: 50%;
+  background-color: rgb(240, 240, 240);
+}
+
+nav img {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+nav .left a {
+  color: black;
+  margin-right: 30px;
+}
+
+nav .right {
+ justify-content: end;
+}
+
+nav .right a {
+  margin-right: 100px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Akhir Navbar */
+
+/* Container */
+.container {
+  background-color: rgb(220, 220, 220);
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+}
+/* Akhir container */
+
+/* Awal home */
+.personal {
+  width: fit-content;
+  margin: 30px 60px;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 20px 20px rgb(170, 170, 170);
+  border-radius: 10px;
+}
+
+.personal .left {
+ flex: 60%;
+ padding: 70px;
+}
+
+.personal .text-wrapper {
+  margin-bottom: 70px;
+}
+
+.personal .text-wrapper h1 {
+  margin-bottom: 30px;
+}
+
+.personal .button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.personal .left .contact-button {
+  background-color: black;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.personal .left .download-cv {
+  color: black;
+}
+
+.personal .left .social-media-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.personal .right {
+ flex: 40%;
+ align-items: center;
+ justify-content: center;
+ padding: 50px;
+}
+
+.personal .right .card {
+  margin: auto;
+  width: 300px;
+  box-shadow: 0 10px 40px rgb(210, 210, 210);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.personal .right .card img {
+  width: 100%;
+}
+
+.personal .right .card .card-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+/* Akhir home */
+
+/* Awal form contact me */
+.form-contact-me {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.form-contact-me h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-contact-me input, .form-contact-me select, .form-contact-me textarea {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgb(190, 190, 190);
+}
+
+.form-contact-me input, select {
+  padding: 10px;
+}
+
+.form-contact-me textarea {
+  resize: none;
+}
+
+.form-contact-me label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-contact-me .submit {
+  display: flex;
+  justify-content: end;
+}
+
+.form-contact-me button {
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+}
+/* Akhir form contact me */
+
+/* Awal my project */
+.project-form h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.project-form .input-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.project-form .date {
+  display: flex;
+}
+
+.project-form .date-left, .date-right {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+.project-form .upload-group label {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.project-form .upload-group label p {
+  background-color: rgb(220, 220, 220);
+  color: rgb(109, 109, 109);
+  display: inline-block;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(200, 200, 200);
+}
+
+.project-form .upload-group .icon{
+  margin-left: auto;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.project-form input, textarea, .input-image {
+  box-shadow: 0 10px 10px rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+.project-form input, textarea {
+  padding: 10px;
+}
+
+.project-form .input-title{
+ font-weight:700;
+ margin-bottom: 2px;
+}
+
+.project-form button {
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.project-form .date-left input {
+ margin-right: 10px;
+}
+
+.tech-checkbox {
+  display: flex;
+}
+
+.tech-checkbox input {
+  margin-right: 5px;
+}
+
+.tech-checkbox label {
+  font-weight: 600;
+  color: rgb(100, 100, 100);
+}
+
+.tech-left {
+  flex: 40%;
+}
+
+.tech-left div, .tech-right div {
+  margin: 5px 0;
+}
+
+.tech-right {
+  flex: 60%;
+}
+
+.project-container {
+  margin-bottom: 50px;
+}
+
+.project-container h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.project-wrapper {
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  padding: 20px;
+  width: calc(33% - 20px);
+  box-shadow: 0 10px 20px rgb(200, 200, 200);
+  margin: 10px;
+  height: 450px;
+}
+
+.project-card .project-img {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 10px;
+}
+
+.project-card-header {
+  margin-bottom: 20px;
+}
+
+.project-card-header a {
+  font-size: large;
+  font-weight: bold;
+}
+
+.project-card-header p{
+  color: gray;
+}
+
+.project-card .icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-card .icon-wrapper img {
+  width: 10%;
+  margin-right: 20px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+.project-card .button-wrapper {
+  display: flex;
+}
+
+.project-card .button-wrapper button {
+  flex: 50%;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.project-form textarea {
+  resize: none;
+}
+/* Akhir my project */
+
+/* Awal project 1 */
+
+.project-1 {
+  width: 100%;
+  margin: 0 100px 30px;
+}
+
+.project-1 h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.project-1 h3 {
+  margin-bottom: 10px;
+}
+
+.project-1 .top {
+  display: flex;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.project-1 .top .left {
+  margin-right: 30px;
+  flex: 60%;
+}
+
+.project-1 .top .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-1 .top .right {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-1 .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.project-1 .data-item {
+  margin-bottom: 20px;
+  flex: 50%;
+}
+
+.project-1 .data-item img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.project-1 .data-item p {
+  font-weight: 500;
+  font-size: large;
+}
+
+.project-1 .data-item .tech-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.project-1 .description {
+  margin-bottom: 50px;
+}
+
+.container-project-1 {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+}
+/* Akhir project 1 */

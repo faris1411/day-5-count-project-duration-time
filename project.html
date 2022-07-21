@@ -1,0 +1,105 @@
+<!doctype html>
+  <head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="">
+        </a>
+        <a href="./index.html">Home</a>
+        <a href="./project.html">My Project</a>
+      </div>
+      <div class="right">
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="container">
+      <form action="" class="project-form">
+        <h1>ADD MY PROJECT</h1>
+        <div class="input-item">
+          <label for="project-name" class="input-title">Project Name</label>
+          <input type="text" id="project-name">
+        </div>
+        <div class="input-item">
+          <div class="date">
+            <div class="date-left">
+              <label for="start-date" class="input-title">Start Date</label>
+              <input type="date" id="start-date">
+            </div>
+            <div class="date-right">
+              <label for="end-date" class="input-title">End Date</label>
+              <input type="date" id="end-date">
+            </div>
+          </div>
+        </div>
+        <div class="input-item">
+          <label for="description" class="input-title">Description</label>
+          <textarea name="" id="description" rows="5"></textarea>
+        </div>
+        <div class="input-item"> 
+          <label for="" class="input-title">Technologies</label>
+          <div class="tech-checkbox">
+            <div class="tech-left">
+              <div class="nodejs">
+                <input type="checkbox" id="nodejs" value="nodejs">
+                <label for="nodejs">Node Js</label>
+              </div>
+              <div>
+                <input type="checkbox" id="reactjs" value="reactjs">
+                <label for="reactjs">React Js</label>
+              </div>
+            </div>
+            <div class="tech-right">
+              <div class="nextjs">
+                <input type="checkbox" id="nextjs" value="nextjs">
+                <label for="nextjs">Next Js</label>
+              </div>
+              <div class="typescript">
+                <input type="checkbox" name="" id="typescript" value="typescript">
+                <label for="typescript">TypeScript</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-item">
+          <label class="input-title">Upload Image</label>
+          <div class="upload-group">
+            <label for="image" class="input-image">
+              <p>Choose</p>
+              <img class="icon" src="./assets/img/5402457_attach_attachment_clip_file_data_icon.png" alt="">
+            </label>
+            <input type="file" id="image" hidden>
+          </div>
+        </div>
+        <button type="button" onclick="addProject()">Submit</button>
+      </form>
+    </div>
+    <div class="project-container">
+      <h1>MY PROJECT</h1>
+      <div class="project-wrapper" id="project-wrapper">
+        <div class="project-card">
+          <img class="project-img" src="./assets/img/project1.jpg" alt="">
+          <div class="project-card-header">
+            <a href="./project1.html">Dumbways Mobile App - 2021</a>
+            <p>durasi: 3 bulan</p>
+          </div>
+          <p>App that used for dumbways student, it was deployed and can download on playstore.<br>Happy download</p>
+          <div class="icon-wrapper">
+            <img src="./assets/img/nodejs_icon.png" alt="">
+            <img src="./assets/img/nextjs_icon.png" alt="">
+            <img src="./assets/img/reactjs_icon.png" alt="">
+            <img src="./assets/img/typescript_icon.png" alt="">
+          </div>
+          <div class="button-wrapper">
+            <button>edit</button>
+            <button>delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script/project.js"></script>
+  </body>
+</html>

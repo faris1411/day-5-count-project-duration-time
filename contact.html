@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="">
+        </a>
+        <a href="./index.html">Home</a>
+        <a href="./project.html">My Project</a>
+      </div>
+      <div class="right">
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="container">
+        <form class="form-contact-me" action="">
+          <h2>GET IN TOUCH</h2>
+          <div>
+            <label for="input-name">Name</label>
+            <input type="text" id="input-name">
+          </div>
+          <div>
+            <label for="input-email">Email</label>
+            <input type="email" id="input-email">
+          </div>
+          <div>
+            <label for="input-phone">Phone Number</label>
+            <input type="text" id="input-phone">
+          </div>
+          <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject">
+              <option value="" hidden></option>
+              <option>Let's Talk</option>
+              <option>Let's Collaboration</option>
+              <option>I am Hiring</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-message">Your Message</label>
+            <textarea id="input-message" rows="7"></textarea>
+          </div>
+          <div class="submit">
+            <button type="button" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+    </div>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
