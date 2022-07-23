@@ -4,7 +4,8 @@ function addProject() {
   let technologies = [];
 
   let name = document.getElementById('project-name').value;
-  let duration = '3 bulan';
+  let startDate = document.getElementById('start-date').value;
+  let endDate = document.getElementById('end-date').value;
   let description = document.getElementById('description').value;
   let nodejs = document.getElementById('nodejs');
   let nextjs = document.getElementById('nextjs');
@@ -27,6 +28,8 @@ function addProject() {
     technologies.push(typescript.value);
   }
   
+  let duration = getDuration(startDate, endDate);
+
   let project = {
     name: name,
     duration: duration,
@@ -34,8 +37,6 @@ function addProject() {
     technologies: technologies,
     image: image,
   }
-
-  console.log(technologies);
 
   projects.push(project);
 
@@ -71,7 +72,7 @@ function renderProject() {
       <img class="project-img" src="${projects[i].image}" alt="">
       <div class="project-card-header">
         <a href="./project1.html">${projects[i].name}</a>
-        <p>durasi: 3 bulan</p>
+        <p>${projects[i].duration}</p>
       </div>
       <p>${projects[i].description}<br>Happy download</p>
       <div class="icon-wrapper">
@@ -87,5 +88,21 @@ function renderProject() {
     </div>
     `
   }
+}
 
+function getDuration(startDate, endDate) {
+    // Calculate the difference between 2 dates
+    var a = moment(endDate)
+    var b = moment(startDate)
+    let difference = a.diff(b, 'years');
+    let duration = `${difference} tahun`;
+    if (difference < 1) {
+      difference = a.diff(b, 'month');
+      duration = `${difference} bulan`;
+      if (difference < 1) {
+        difference = a.diff(b, 'days');
+        duration = `${difference} hari`;
+      }
+    }
+    return duration
 }
